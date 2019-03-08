@@ -1,0 +1,38 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+
+using namespace std; 
+
+int main()
+{
+	int pbt, pst, ppt, pga;
+	int numbts, numsts, numpts, numgas;
+	int abts, asts, apts, agas;
+	int numts, totalsale;
+
+	pbt = 250;
+	pst = 100;
+	ppt = 50;
+	pga = 25;
+
+	numbts = 5750;
+	numsts = 28000;
+	numpts = 35750;
+	numgas = 18750;
+
+	abts = pbt * numbts;
+	asts = pst * numsts;
+	apts = ppt * numpts;
+	agas = pga * numgas;
+
+	numts = numbts + numsts + numpts + numgas;
+	totalsale = abts + asts + apts + agas;
+
+	cout << " The total number of tickets sold is " << numts << endl;
+	cout << " The total sale amount is " << totalsale << endl;
+
+	_getch();
+	cin.get();
+	return 0;
+}
