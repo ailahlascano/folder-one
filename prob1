@@ -1,0 +1,43 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+
+using namespace std; 
+
+int main()
+{
+	int pbt, pst, ppt, pga;
+	int bts, sts, pts, gas;
+
+	pbt = 250;
+	pst = 100;
+	ppt = 50;
+	pga = 25;
+
+	cout << " Box ticket = " << pbt << endl;
+	cin >> bts;
+	cout << " Sales amount of box tickets = " << 250 * bts << endl;
+
+	cout << " " << endl;
+
+	cout << " Sideline ticket = " << pst << endl;
+	cin >> sts;
+	cout << " Sales amount of sideline tickets = " << 100 * sts << endl;
+
+	cout << " " << endl;
+
+	cout << " Premium ticket = " << ppt << endl;
+	cin >> pts;
+	cout << " Sales amount of premium tickets = " << 50 * pts << endl;
+
+	cout << " " << endl;
+
+	cout << " General admission = " << ppt << endl;
+	cin >> gas;
+	cout << " Sales amount of general admission tickets = " << 25 * gas << endl;
+
+	cout << " Total amount of tickets sold = " << (250 * bts) + (100 * sts) + (50 * pts) + (25 * gas);
+	
+	_getch();
+	return 0;
+}
